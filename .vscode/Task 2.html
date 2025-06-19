@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Header & Fixed Footer</title>
+  <style>
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgb(5, 5, 24);
+      color: white;
+      padding: 10px;
+      z-index: 1000; /* Keeps it on top */
+    }
+
+    /* Main Content */
+    .content {
+      padding: 20px;
+      margin-bottom: 60px; /* space for footer */
+    }
+
+    body{
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KnY2q18wU4Ny9C9AOsmnqMMegqGY5-JNag&s');
+        background-size: cover;
+        color:black;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      background-color: rgb(254, 254, 254);
+      padding: 10px;
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+
+    /* Fixed Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <h1>Sticky Header</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <p>This is a paragraph of Electronic Gadgets.</p>
+    <div class="relative-box">I’m a relative box</div>
+    <p>Electronic gadgets are devices that use electricity to perform specific tasks. </p>
+    <p>From smartphones facilitating instant communication to laptops enabling remote work, these devices offer convenience and efficiency</p>
+    <p>They have revolutionized entertainment, education, and healthcare, providing access to information and resources previously unavailable.</p>
+    <p>However, excessive use can lead to negative consequences like reduced physical activity, privacy concerns, and potential addiction.</p>
+  </div>
+
+  <!-- Fixed Footer -->
+  <footer>
+    I’m fixed at the bottom!
+  </footer>
+
+</body>
+</html>
